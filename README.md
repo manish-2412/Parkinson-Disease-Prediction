@@ -10,11 +10,9 @@ This project predicts if a person has Parkinson's disease by looking at their vo
 - [Dataset](#dataset)
 - [Steps I Followed](#steps-i-followed)
 - [Results](#results)
-- [Charts](#charts)
 - [Tools Used](#tools-used)
 - [How to Run](#how-to-run)
 - [Project Files](#project-files)
-- [Future Work](#future-work)
 - [Author](#author)
 
 ---
@@ -59,24 +57,12 @@ I removed the `id` column and any rows that had no value in the `class` column.
 
 | Measure | Score |
 |---|---|
-| Accuracy | [95]% |
-| Precision | [94]% |
-| Recall | [96]% |
-| F1-score | [95]% |
+| Accuracy | 95% |
+| Precision | 94% |
+| Recall | 96% |
+| F1-score | 95% |
 
 **Best settings found:** `{'C': [..], 'gamma': '[..]', 'kernel': 'rbf'}`
-
-## Charts
-
-The notebook makes these charts:
-
-- Number of people in each group, before and after SMOTE
-- Top 10 most useful features
-- Heatmap showing how the top 10 features relate to each other
-- Chart showing how much each feature adds to the prediction
-
-![Class Distribution](images/class_distribution.png)
-![Feature Importance](images/feature_importance.png)
 
 ---
 
@@ -128,16 +114,6 @@ Parkinson-Disease-Prediction
 ├── images/                      # Charts used in this README
 └── README.md
 ```
-
----
-
-## Future Work
-
-- Try more models like Random Forest, XGBoost, and Logistic Regression
-- Add statistical tests (t-test or Mann-Whitney) to check which features really matter
-- Use a Pipeline so scaling and SMOTE happen safely inside cross-validation
-- Try PCA to reduce the number of features
-- Build a simple web app that gives predictions
 
 ---
 
